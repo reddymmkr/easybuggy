@@ -21,6 +21,13 @@
 		<jvm.args.number.of.gc.log.files>-XX:NumberOfGCLogFiles=5</jvm.args.number.of.gc.log.files>
 		<jvm.args.gc.log.file.size>-XX:GCLogFileSize=10M</jvm.args.gc.log.file.size>
 	</properties>
+	<properties>
+    		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    		 <sonar.organization>nagellaravi</sonar.organization>
+		     <sonar.host.url>https://sonarcloud.io</sonar.host.url>   
+	  	<maven.compiler.source>1.8</maven.compiler.source>
+	  	<maven.compiler.target>1.8</maven.compiler.target>
+    	</properties>
 
 	<profiles>
 		<profile>
@@ -190,7 +197,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.6</version>
+				<version>3.3.1</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<warName>ROOT</warName>
@@ -312,4 +319,10 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<distributionManagement>
+        	<repository>
+         	<id>my-repo</id>
+          	<url>http://localhost:8082/artifactory/malli_releases/</url>
+        	</repository>
+   </distributionManagement>
 </project>

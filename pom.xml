@@ -20,9 +20,7 @@
 		<jvm.args.gc.log.file.rotation>-XX:+UseGCLogFileRotation</jvm.args.gc.log.file.rotation>
 		<jvm.args.number.of.gc.log.files>-XX:NumberOfGCLogFiles=5</jvm.args.number.of.gc.log.files>
 		<jvm.args.gc.log.file.size>-XX:GCLogFileSize=10M</jvm.args.gc.log.file.size>
-	</properties>
-	<properties>
-    		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     		 <sonar.organization>nagellaravi</sonar.organization>
 		     <sonar.host.url>https://sonarcloud.io</sonar.host.url>   
 	  	<maven.compiler.source>1.8</maven.compiler.source>
